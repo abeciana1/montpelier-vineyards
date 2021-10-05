@@ -5,14 +5,27 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     colors: {
-      beige: '#ffefbd',
-      marv: '#53293b',
-      blueMetal: '#1985a1',
-      seaweed: '#66a182',
-      black: '#0f161a',
-      cotta: '#e87461'
+      black: '#0f161a'
     },
-    extend: {},
+    extend: {
+      colors: {
+        beige: {
+          DEFAULT: '#ffefbd'
+        },
+        marv: {
+          DEFAULT: '#53293b'
+        },
+        blueMetal: {
+          DEFAULT: '#1985a1'
+        },
+        seaweed: {
+          DEFAULT: '#66a182'
+        },
+        cotta: {
+          DEFAULT:'#e87461'
+        },
+      }
+    },
     ...defaultTheme
   },
   variants: {

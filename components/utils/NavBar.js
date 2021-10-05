@@ -19,7 +19,7 @@ const NavBar = (props) => {
                     />
                 </div>
                 <span
-                    className="text-xl self-center absolute right-16"
+                    className="text-xl text-marv self-center absolute right-16"
                 >
                         <Link
                             href="/"
