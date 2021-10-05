@@ -10,7 +10,7 @@ const NavBar = (props) => {
     return (
         <React.Fragment>
             <div
-                className="py-5 px-10 flex items-stretch"
+                className="py-5 px-16 flex items-stretch"
             >
                 <div className="w-1/3">
                     <img
@@ -19,7 +19,7 @@ const NavBar = (props) => {
                     />
                 </div>
                 <span
-                    className="text-xl self-center absolute right-10"
+                    className="text-xl self-center absolute right-16"
                 >
                         <Link
                             href="/"
@@ -30,28 +30,28 @@ const NavBar = (props) => {
                             href="/our-wines"
                         >
                             <a
-                                className="pl-5"
+                                className="pl-10"
                             >Our Wines</a>
                         </Link>
                         <Link
                             href="/where-to-buy"
                         >
                             <a
-                                className="pl-5"
+                                className="pl-10"
                             >Where to Buy</a>
                         </Link>
                         <Link
                             href="/about"
                         >
                             <a
-                                className="pl-5"
+                                className="pl-10"
                             >About</a>
                         </Link>
                         <Link
                             href="/shop-now"
                         >
                             <a
-                                className="pl-5"
+                                className="pl-10"
                             >Shop Now</a>
                         </Link>
                 </span>
