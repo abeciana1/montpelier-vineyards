@@ -14,3 +14,7 @@ body {
 a {
   text-decoration: none;
 }
+
+.headlessui-popover-button-1:focus {
+  outline: none;
+}
