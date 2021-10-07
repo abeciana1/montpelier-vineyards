@@ -35,7 +35,7 @@ export default function Home() {
         >
           <div>
             <div
-              className="font-bold text-marv text-xl"
+              className="font-bold text-marv text-xl leading-8"
             >
               Welcome to Montpelier Vineyards
               <div
@@ -46,7 +46,7 @@ export default function Home() {
               <div className="pt-8">
                 <Link href="/about">
                   <button
-                    className="bg-marv text-beige py-2.5 px-4 rounded-full"
+                    className="bg-marv text-beige py-2 px-4 rounded-full"
                   >
                     About us
                   </button>
