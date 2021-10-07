@@ -35,13 +35,13 @@ export default function Home() {
         >
           <div>
             <div
-              className="font-bold text-marv text-xl leading-8"
+              className="font-bold text-marv text-2xl leading-8"
             >
-              Welcome to Montpelier Vineyards
+              It's All In The Family
               <div
-                className="font-normal text-black leading-8"
+                className="font-normal text-lg text-black leading-8"
               >
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Habitasse venenatis purus faucibus enim rhoncus suspendisse. Netus et elementum lacus, sem sapien faucibus.
+                The Becker family started making organic wine back in 1992 on our small back yard organic vineyard in Port Huron, Michigan. The first grapes from those vines were crushed by the feet of my infant son Christopher, and since this time we dreamed of producing quality organic wines. We moved to Vermont in 1997 and started establishing an organic vineyard. Our goal is to produce small-batch organically farmed wines by hand
               </div>
               <div className="pt-8">
                 <Link href="/about">
