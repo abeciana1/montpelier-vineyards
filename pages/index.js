@@ -32,7 +32,7 @@ export default function Home() {
         >
           <div>
             <div
-              className="font-bold text-marv text-2xl leading-8"
+              className="font-medium text-marv text-2xl leading-8"
             >
               It's All In The Family
               <div
