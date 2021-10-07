@@ -1,13 +1,10 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
-import useDimensions from 'react-cool-dimensions';
 import styles from '../styles/Home.module.css'
 import Layout from '../components/utils/Layout'
 
 export default function Home() {
-
-  const { observe, width } = useDimensions()
   
 
   return (
@@ -55,7 +52,7 @@ export default function Home() {
             </div>
           </div>
           <div>
-            <div>
+            <div className="pt-8 lg:pt-0">
               <img
                 src="https://media.graphcms.com/output=format:jpg/pIWEC2dLSTuo5Py1SKUM?_ga=2.211774485.1804149618.1633573467-722458239.1630371733"
                 alt="Petite Pearl going through veraison"
@@ -70,7 +67,7 @@ export default function Home() {
               />
             </div>
           </div>
-          <div>
+          <div className="pt-8 lg:pt-0">
             <img
               src="https://media.graphcms.com/output=format:jpg/S9kULbybQMizPUr9O1Tp?_ga=2.186624297.1804149618.1633573467-722458239.1630371733"
               alt="Montpelier Vineyards — Sparkling Wine"
