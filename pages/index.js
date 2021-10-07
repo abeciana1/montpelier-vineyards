@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
+import Link from 'next/link'
 import useDimensions from 'react-cool-dimensions';
 import styles from '../styles/Home.module.css'
 import Layout from '../components/utils/Layout'
@@ -30,13 +31,51 @@ export default function Home() {
           />
         </div>
         <section
-          className="py-5 grid lg:grid-cols-3"
+          className="py-8 grid lg:grid-cols-3 items-center gap-x-8"
         >
           <div>
-            Welcome to Montpelier Vineyards
+            <div
+              className="font-bold text-marv text-xl"
+            >
+              Welcome to Montpelier Vineyards
+              <div
+                className="font-normal text-black leading-8"
+              >
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Habitasse venenatis purus faucibus enim rhoncus suspendisse. Netus et elementum lacus, sem sapien faucibus.
+              </div>
+              <div className="pt-8">
+                <Link href="/about">
+                  <button
+                    className="bg-marv text-beige py-2.5 px-4 rounded-full"
+                  >
+                    About us
+                  </button>
+                </Link>
+              </div>
+            </div>
           </div>
-          <div></div>
-          <div></div>
+          <div>
+            <img
+              src="https://media.graphcms.com/output=format:jpg/S9kULbybQMizPUr9O1Tp?_ga=2.186624297.1804149618.1633573467-722458239.1630371733"
+              alt="Montpelier Vineyards — Sparkling Wine"
+            />
+          </div>
+          <div>
+            <div>
+              <img
+                src="https://media.graphcms.com/output=format:jpg/pIWEC2dLSTuo5Py1SKUM?_ga=2.211774485.1804149618.1633573467-722458239.1630371733"
+                alt="Petite Pearl going through veraison"
+              />
+            </div>
+            <div
+              className="pt-8"
+            >
+              <img
+                src="https://media.graphcms.com/output=format:jpg/pIWEC2dLSTuo5Py1SKUM?_ga=2.211774485.1804149618.1633573467-722458239.1630371733"
+                alt="Petite Pearl going through veraison"
+              />
+            </div>
+          </div>
         </section>
       </Layout>
     </>
