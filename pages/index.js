@@ -31,7 +31,7 @@ export default function Home() {
           />
         </div>
         <section
-          className="py-8 grid lg:grid-cols-3 items-center gap-x-8"
+          className="py-8 grid lg:grid-cols-3 items-center gap-x-16"
         >
           <div>
             <div
@@ -55,12 +55,6 @@ export default function Home() {
             </div>
           </div>
           <div>
-            <img
-              src="https://media.graphcms.com/output=format:jpg/S9kULbybQMizPUr9O1Tp?_ga=2.186624297.1804149618.1633573467-722458239.1630371733"
-              alt="Montpelier Vineyards — Sparkling Wine"
-            />
-          </div>
-          <div>
             <div>
               <img
                 src="https://media.graphcms.com/output=format:jpg/pIWEC2dLSTuo5Py1SKUM?_ga=2.211774485.1804149618.1633573467-722458239.1630371733"
@@ -71,10 +65,16 @@ export default function Home() {
               className="pt-8"
             >
               <img
-                src="https://media.graphcms.com/output=format:jpg/pIWEC2dLSTuo5Py1SKUM?_ga=2.211774485.1804149618.1633573467-722458239.1630371733"
-                alt="Petite Pearl going through veraison"
+                src="https://media.graphcms.com/Hmub3ZL6Rbu10cXKf4iR"
+                alt="Wine tasting event"
               />
             </div>
+          </div>
+          <div>
+            <img
+              src="https://media.graphcms.com/output=format:jpg/S9kULbybQMizPUr9O1Tp?_ga=2.186624297.1804149618.1633573467-722458239.1630371733"
+              alt="Montpelier Vineyards — Sparkling Wine"
+            />
           </div>
         </section>
       </Layout>
