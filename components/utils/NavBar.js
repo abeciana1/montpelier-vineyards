@@ -1,13 +1,13 @@
 import React, {useState} from 'react';
 import Link from 'next/link'
-import { Popover, Transition } from '@headlessui/react'
+import { Transition } from '@headlessui/react'
 import { MenuIcon, XIcon } from '@heroicons/react/solid'
 
 // import Image from 'next/image';
 
 // import Logo from '../../public/Montpelier_Vinyards_logo.svg'
 
-const NavBar = (props) => {
+const NavBar = () => {
 
     const [ showMenu, setShowMenu ]  = useState(false)
 
