@@ -27,6 +27,9 @@ const About = () => {
                         className="w-2/5 pl-8"
                     />
                 </section>
+                <section>
+                    <h3>Why Organic, Why Biodynamic?</h3>
+                </section>
             </Layout>
         </React.Fragment>
     )
