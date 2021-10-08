@@ -3,12 +3,16 @@ import Link from 'next/link'
 import { Transition } from '@headlessui/react'
 import { MenuIcon, XIcon } from '@heroicons/react/solid'
 
+import Layout from './Layout'
+
 const NavBar = () => {
 
     const [ showMenu, setShowMenu ]  = useState(false)
 
     return (
         <React.Fragment>
+            <Layout>
+
             <div
                 className="py-5 px-5 lg:px-16 flex items-stretch content-center"
             >
@@ -16,14 +20,18 @@ const NavBar = () => {
                     className="flex items-stretch content-center xl:justify-between"
                 >
                     <Link href="/">
-                        <img
-                            src="./Montpelier_Vinyards_logo.svg"
-                            alt="Montpelier Vineyards logo"
-                            className="w-8/12 md:w-1/4 md:w-1/3 cursor-pointer"
-                        />
+                        <a
+                            className="w-8/12 md:w-1/4 cursor-pointer"
+                        >
+                            <img
+                                
+                                src="/Montpelier_Vinyards_logo.svg"
+                                alt="Montpelier Vineyards logo"
+                            />
+                        </a>
                     </Link>
                     <span
-                        className="md:text-lg lg:text-xl xl:text-3xl text-marv self-center absolute xl:relative md:right-5 lg:right-16 xl:right-0 hidden md:block"
+                        className="md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl text-marv self-center absolute  md:right-5 lg:right-16 xl:relative xl:right-0 hidden md:inline"
                     >
                             <Link
                                 href="/"
@@ -139,8 +147,9 @@ const NavBar = () => {
                             : null}
                     </span>
                     <h4
-                        className="text-center text-lg text-marv"
+                        className="text-center text-lg xl:text-2xl 2xl:text-3xl text-marv"
                     >“Healthy soil, vigorous vines, spirited wines”</h4>
+            </Layout>
         </React.Fragment>
     )
 }

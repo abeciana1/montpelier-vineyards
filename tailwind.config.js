@@ -35,6 +35,9 @@ module.exports = {
         cotta: {
           DEFAULT:'#e87461'
         },
+        brown: {
+          DEFAULT:'#E0C3A5'
+        }
       }
     },
     ...defaultTheme
