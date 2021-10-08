@@ -9,7 +9,6 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   background-color: #ffefbd;
-  max-width: 2000px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -26,3 +25,11 @@ a {
 .navbar {
   max-width: 320px;
 }
+
+.layout {
+  max-width: 2000px;
+}
+
+/* main {
+  margin-bottom: auto;
+} */
