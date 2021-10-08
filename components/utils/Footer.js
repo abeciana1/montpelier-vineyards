@@ -72,27 +72,27 @@ const Footer = () => {
                         className="grid md:grid-cols-5 items-center justify-items-center"
                     >
                         <div></div>
-                        <div>
+                        <a href="http://www.vermontgrapeandwinecouncil.com/" target="_blank">
                             <img
                             src="/vt-grape-wine-council.webp"
                             className="w-32"
                             alt="Vermont Grape Wine Council logo"
                             />
-                        </div>
-                        <div>
+                        </a>
+                        <a href="http://www.vermontfresh.net/" target="_blank">
                             <img
                             src="https://media.graphcms.com/output=format:jpg/FU1jNGsSRyKj4981mMkY?_ga=2.212780436.1804149618.1633573467-722458239.1630371733"
                             className="w-20"
                             alt="Vermont Fresh Network logo"
                             />
-                        </div>
-                        <div>
+                        </a>
+                        <a href="https://nofavt.org/" target="_blank">
                             <img
                             src="/vt-certified-organic.gif"
                             className="w-20"
                             alt="Vermont Certified Organic logo"
                             />
-                        </div>
+                        </a>
                         <div></div>
                     </section>
                     <div
