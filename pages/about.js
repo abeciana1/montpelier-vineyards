@@ -7,11 +7,11 @@ const About = () => {
         <React.Fragment>
             <Layout>
                 <section
-                    className="flex items-center py-8"
+                    className="flex flex-col-reverse md:flex-row items-center py-5"
                 >
                     <div>
                         <div
-                            className="font-medium text-marv text-3xl leading-10"
+                            className="font-medium text-marv text-3xl leading-10 pt-5 md:pt-0"
                         >
                         It's All In The Family
                             <div
@@ -24,7 +24,7 @@ const About = () => {
                     <img
                         src="https://media.graphcms.com/LkNJP9FRACGrr6eyPxEb"
                         alt="Montpelier Vineyards — squishing grapes"
-                        className="w-2/5 pl-8"
+                        className="md:w-2/5 md:pl-8 mx-auto"
                     />
                 </section>
                 <section className="pb-20">
