@@ -5,7 +5,7 @@ const Layout = ({ children }) => {
 
     return (
         <section
-            className="px-5 lg:px-16 relative mx-auto"
+            className="layout px-5 lg:px-16 relative mx-auto"
         >
             {children}
         </section>

@@ -1,16 +1,20 @@
 import '../styles/globals.css'
 // import "tailwindcss/tailwind.css"
-import NavBar from '../components/utils/NavBar'
-import Head from 'next/head'
 
+import Head from 'next/head'
+// import styles from '../styles/Home.module.css'
+
+import Footer from '../components/utils/Footer'
 
 function MyApp({ Component, pageProps }) {
   return (
     <>
-      <Head>
-        <link rel="icon" href="/mv_wine_favicon.svg" />
-      </Head>
-      <NavBar/>
+    <Head>
+      <title>Montpelier Vineyards</title>
+    </Head>
+    {/* <section
+      className="max-h-full"
+    > */}
       <Component {...pageProps} />
     </>
   )
