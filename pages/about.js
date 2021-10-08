@@ -27,7 +27,7 @@ const About = () => {
                         className="w-2/5 pl-8"
                     />
                 </section>
-                <section>
+                <section className="pb-20">
                     <h3
                         className="text-3xl text-center text-marv font-medium leading-10"
                     >Why Organic, Why Biodynamic?</h3>
