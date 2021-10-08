@@ -1,6 +1,8 @@
 import React from 'react';
 import Layout from '../components/utils/Layout'
 
+// TODO  - need to install email js and setup configuration
+
 const About = () => {
 
     return (
