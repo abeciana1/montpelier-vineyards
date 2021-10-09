@@ -6,7 +6,6 @@ const OurWines = (props) => {
     return (
         <React.Fragment>
             <Layout>
-                
             </Layout>
         </React.Fragment>
     )
