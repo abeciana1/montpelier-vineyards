@@ -67,7 +67,7 @@ const Footer = () => {
                                     802-522-4479
                                 </div>
                         </div>
-                        <div className="pt-5">
+                        <div className="pt-5 lg:pt-0">
                             <Contact/>
                         </div>
                     </section>
