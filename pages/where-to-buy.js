@@ -13,8 +13,6 @@ const WhereToBuy = () => {
                     >Where to buy our wine</h2>
                     <div className="text-center text-marv text-lg py-2">
                         You can find our fine wines in restaurants and retail locations!
-                        <br/>
-                        We can also now ship our wines to 37 states!
                     </div>
                 </section>
                 <section
@@ -34,8 +32,22 @@ const WhereToBuy = () => {
                 <section id="local">
                     Ship with vino shipper
                 </section>
-                <section>
-                    <DomShipping/>
+                <section className="">
+                    <h2
+                        className="text-center text-marv text-3xl py-2 leading-10"
+                    >
+                        We can now ship our wines to 37 states!
+                    </h2>
+                    <div
+                        className="text-center font-normal text-lg text-black leading-8"
+                    >
+                        Alaska, Arizona, Colorado, Washington DC, Florida, Georgia, Hawaii, Iowa, Idaho, Illinois, Indiana, Kansas, Louisiana, Massachusetts, Maryland, Maine, Minnesota, Missouri, North Carolina, North Dakota, Nebraska, New Hampshire, New Mexico, Nevada, New York, Ohio, Oklahoma, Oregon, Pennsylvania, South Carolina, Tennessee, Texas, Virginia, Washington, Wisconsin, West Virginia, Wyoming
+                    </div>
+                    <section
+                        className="flex justify-center py-10"
+                    >
+                        <DomShipping/>
+                    </section>
                 </section>
             </Layout>
         </React.Fragment>

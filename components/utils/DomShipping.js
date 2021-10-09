@@ -5,6 +5,7 @@ const statesCustomConfig = () => {
 
     return {
         "AK": {
+        title: "AK",
         fill: "#53293b"
         },
         "AZ": {
