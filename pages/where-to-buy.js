@@ -1,5 +1,7 @@
 import React from 'react';
 import Layout from '../components/utils/Layout'
+import { USAMap } from "usa-map-react"
+
 
 const WhereToBuy = (props) => {
 
@@ -29,6 +31,11 @@ const WhereToBuy = (props) => {
                         href="/where-to0-buy#ship"
                     >Domestic Shipping</a>
                 </section>
+                <section></section>
+                <section id="local">
+                    Ship with vino shipper
+                </section>
+                <section></section>
             </Layout>
         </React.Fragment>
     )
