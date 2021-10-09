@@ -1,9 +1,8 @@
 import React from 'react';
 import Layout from '../components/utils/Layout'
-import { USAMap } from "usa-map-react"
+import DomShipping from '../components/utils/DomShipping'
 
-
-const WhereToBuy = (props) => {
+const WhereToBuy = () => {
 
     return (
         <React.Fragment>
@@ -35,7 +34,9 @@ const WhereToBuy = (props) => {
                 <section id="local">
                     Ship with vino shipper
                 </section>
-                <section></section>
+                <section>
+                    <DomShipping/>
+                </section>
             </Layout>
         </React.Fragment>
     )
