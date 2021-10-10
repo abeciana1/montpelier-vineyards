@@ -19,13 +19,13 @@ const WhereToBuy = () => {
                     className="text-marv text-xl grid md:grid-cols-3 justify-items-center"
                 >
                     <a
-                        href="/where-to0-buy#retail"
+                        href="/where-to-buy#retail"
                     >Restaurants & Retailers</a>
                     <a
-                        href="/where-to0-buy#local"
+                        href="/where-to-buy#local"
                     >Local Pickup</a>
                     <a
-                        href="/where-to0-buy#ship"
+                        href="/where-to-buy#ship"
                     >Domestic Shipping</a>
                 </section>
                 <section></section>

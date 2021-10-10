@@ -5,14 +5,13 @@ import { MenuIcon, XIcon } from '@heroicons/react/solid'
 
 import Layout from './Layout'
 
-const NavBar = () => {
+const NavBar = (props) => {
 
-    const [ showMenu, setShowMenu ]  = useState(false)
+    const [showMenu, setShowMenu] = useState(false)
 
     return (
         <React.Fragment>
             <Layout>
-
             <div
                 className="py-5 px-5 lg:px-16 flex items-stretch content-center"
             >
@@ -68,11 +67,11 @@ const NavBar = () => {
                             </Link>
                     </span>
                     <span
-                        className="self-center absolute right-5"
+                        className="self-center absolute right-5 z-50"
                     >
                         <button
-                            className="text-marv w-8 h-8 md:hidden"
                             onClick={() => setShowMenu(!showMenu)}
+                            className="text-marv w-8 h-8 md:hidden"
                         >
                             {showMenu ?
                                 <XIcon/>
