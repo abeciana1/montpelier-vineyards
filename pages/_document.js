@@ -1,5 +1,4 @@
 import Document, { Html, Head, Main, NextScript } from 'next/document'
-import NavBar from '../components/utils/NavBar'
 import Footer from '../components/utils/Footer'
 
 const MyDocument = () => {
