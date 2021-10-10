@@ -7,6 +7,7 @@ import Head from 'next/head'
 import Footer from '../components/utils/Footer'
 
 function MyApp({ Component, pageProps }) {
+
   return (
     <>
     <Head>

@@ -25,7 +25,7 @@ export default function Home() {
           />
         </div>
         <section
-          className="py-8 grid lg:grid-cols-3 items-center gap-x-16"
+          className="pt-8 grid lg:grid-cols-3 items-center gap-x-16 pb-20"
         >
           <div>
             <div
