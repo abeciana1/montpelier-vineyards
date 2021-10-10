@@ -1,17 +1,20 @@
 import React from 'react';
 import Layout from '../components/utils/Layout'
 
+// TODO  - need to install email js and setup configuration
+// https://dev.to/allanmelo/send-emails-from-a-contact-form-in-react-with-emailjs-and-recaptcha-1oc
+
 const About = () => {
 
     return (
         <React.Fragment>
             <Layout>
                 <section
-                    className="flex items-center py-8"
+                    className="flex flex-col-reverse md:flex-row items-center pt-5"
                 >
                     <div>
                         <div
-                            className="font-medium text-marv text-3xl leading-10"
+                            className="font-medium text-marv text-3xl leading-10 pt-5 md:pt-0"
                         >
                         It's All In The Family
                             <div
@@ -24,10 +27,15 @@ const About = () => {
                     <img
                         src="https://media.graphcms.com/LkNJP9FRACGrr6eyPxEb"
                         alt="Montpelier Vineyards — squishing grapes"
-                        className="w-2/5 pl-8"
+                        className="md:w-2/5 md:pl-8 mx-auto"
                     />
                 </section>
-                <section>
+                <div
+                    className="text-center text-lg py-8"
+                >
+                    Montpelier Vineyard’s goal is to produce great tasting organic wines in Vermont. We believe that good wine begins in the vineyard, and that with healthy soil and vigorous vines we can create spirited wines.
+                </div>
+                <section className="pb-20">
                     <h3
                         className="text-3xl text-center text-marv font-medium leading-10"
                     >Why Organic, Why Biodynamic?</h3>
@@ -55,6 +63,9 @@ const About = () => {
                     >
                         The authentic way to produce a wine that possesses the genuine flavor of the land and clear terroir is to grow grapes organically. We use sustainable, organic and biodynamic farming practices and take those principles into the winery as well. We walk the vineyard daily and carefully tend to each vine. We control grass and weeds using organic mulch at the base of the vines along with hand hoeing. Our relationship to the vines produces strong vines and high quality grapes. Combining our farming practices with our unique location translates into wines of distinction.
                     </div>
+                </section>
+                <section>
+                    
                 </section>
             </Layout>
         </React.Fragment>
