@@ -1,6 +1,7 @@
 import React from 'react';
 import Layout from '../components/utils/Layout'
 import DomShipping from '../components/utils/DomShipping'
+import PurchaseLocations from '../components/utils/PurchaseLocations'
 
 const WhereToBuy = () => {
 
@@ -28,7 +29,9 @@ const WhereToBuy = () => {
                         href="/where-to-buy#ship"
                     >Domestic Shipping</a>
                 </section>
-                <section></section>
+                <section>
+                    <PurchaseLocations />
+                </section>
                 <section id="local">
                     Ship with vino shipper
                 </section>
