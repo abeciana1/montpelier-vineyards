@@ -12,7 +12,6 @@ const MyDocument = () => {
             </Head>
             <body
             >
-                <NavBar/>
                 <Main />
                 <NextScript />
                 <Footer/>

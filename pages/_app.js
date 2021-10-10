@@ -3,16 +3,17 @@ import '../styles/globals.css'
 
 import Head from 'next/head'
 // import styles from '../styles/Home.module.css'
-
+import NavBar from '../components/utils/NavBar'
 import Footer from '../components/utils/Footer'
 
 function MyApp({ Component, pageProps }) {
 
   return (
     <>
-    <Head>
+      <Head>
       <title>Montpelier Vineyards</title>
-    </Head>
+      </Head>
+      <NavBar/>
     {/* <section
       className="max-h-full"
     > */}

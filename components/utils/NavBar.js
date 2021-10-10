@@ -9,11 +9,13 @@ const NavBar = (props) => {
 
     const [showMenu, setShowMenu] = useState(false)
 
+    console.log("showMenu")
+
     return (
         <React.Fragment>
             <Layout>
             <div
-                className="py-5 px-5 lg:px-16 flex items-stretch content-center"
+                className="py-5 lg:px-16 flex items-stretch content-center"
             >
                 <div
                     className="flex items-stretch content-center xl:justify-between"
