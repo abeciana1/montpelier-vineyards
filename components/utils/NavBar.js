@@ -9,11 +9,11 @@ const NavBar = (props) => {
 
     const [showMenu, setShowMenu] = useState(false)
 
-    console.log("showMenu")
+    // console.log("showMenu")
 
     return (
         <React.Fragment>
-            <Layout>
+            {/* <Layout> */}
             <div
                 className="py-5 lg:px-16 flex items-stretch content-center"
             >
@@ -150,7 +150,7 @@ const NavBar = (props) => {
                     <h4
                         className="text-center text-lg xl:text-2xl 2xl:text-3xl text-marv"
                     >“Healthy soil, vigorous vines, spirited wines”</h4>
-            </Layout>
+            {/* </Layout> */}
         </React.Fragment>
     )
 }

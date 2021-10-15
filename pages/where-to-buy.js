@@ -2,8 +2,13 @@ import React from 'react';
 import Layout from '../components/utils/Layout'
 import DomShipping from '../components/utils/DomShipping'
 import PurchaseLocations from '../components/utils/PurchaseLocations'
+import { gql, GraphQLClient } from 'graphql-request'
 
-const WhereToBuy = () => {
+const WhereToBuy = (props) => {
+
+    const {
+        locations
+    } = props
 
     return (
         <React.Fragment>
@@ -30,7 +35,9 @@ const WhereToBuy = () => {
                     >Domestic Shipping</a>
                 </section>
                 <section>
-                    <PurchaseLocations />
+                    <PurchaseLocations
+                        locations={locations}
+                    />
                 </section>
                 <section id="local">
                     Ship with vino shipper
@@ -82,6 +89,41 @@ const WhereToBuy = () => {
             </Layout>
         </React.Fragment>
     )
+}
+
+export async function getStaticProps(context) {
+
+    // const client = new GraphQLClient('https://api-us-east-1.graphcms.com/v2/cku68bqqj27iv01xn6g6se7dc/master')
+    const client = new GraphQLClient(process.env.GRAPH_CMS_API_ENDPOINT)
+
+    // query PurchaseLocations() {
+    const query = gql`
+        query {
+  purchaseLocations{
+    id
+    locationTitle
+    locationType
+    locationWebsite
+    phoneNumber
+    locationAddress
+    locationGeoCoords {
+      latitude
+      longitude
+    }
+  }
+}`
+    
+    // const data = await graphClient.request(query)
+    const data = await client.request(query)
+
+    const locations = data.purchaseLocations
+    
+    return {
+        props: {
+            locations
+        }
+    }
+    
 }
 
 export default WhereToBuy
