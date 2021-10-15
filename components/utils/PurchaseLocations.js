@@ -33,8 +33,13 @@ const PurchaseLocations = (props) => {
             >
                 <section>
                     <h4
-                        className="text-lg xl:text-2xl 2xl:text-3xl text-marv py-5 "
+                        className="text-xl xl:text-2xl 2xl:text-3xl text-marv py-5 font-medium"
                     >Find us at</h4>
+                    <div
+                        className=""
+                    >
+                        Filter by
+                    </div>
                     <div>
                         <ul
                             className="px-5 py-2"

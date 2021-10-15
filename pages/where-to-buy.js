@@ -34,7 +34,9 @@ const WhereToBuy = (props) => {
                         href="/where-to-buy#ship"
                     >Domestic Shipping</a>
                 </section>
-                <section>
+                <section
+                    id="retail"
+                >
                     <PurchaseLocations
                         locations={locations}
                     />
