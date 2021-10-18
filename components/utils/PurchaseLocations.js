@@ -3,7 +3,9 @@ import React, { useState } from 'react';
 // import env from "react-dotenv";
 import RestaurantIcon from './RestaurantIcon'
 import RetailIcon from './RetailIcon'
-
+import PurchaseMap from './PurchaseMap'
+import dynamic from 'next/dynamic'
+// import Head from 'next/head'
 
 
 const PurchaseLocations = (props) => {
@@ -25,23 +27,63 @@ const PurchaseLocations = (props) => {
         //!         "longitude": -72.57243749999999
         //!     }
         //! }
+    // const MapWithNoSSR = dynamic(() => import("./PurchaseMap"), {
+    // ssr: false
+    // });
 
     return (
         <React.Fragment>
             <section
-                className="grid grid-cols-2"
+                // className="grid grid-cols-2"
             >
                 <section>
                     <h4
-                        className="text-xl xl:text-2xl 2xl:text-3xl text-marv py-5 font-medium"
-                    >Find us at</h4>
-                    <div
+                        className="text-3xl text-center text-marv py-2 leading-10"
+                    >Find us at retailers and restaurants</h4>
+                    {/* <div
                         className=""
                     >
                         Filter by
-                    </div>
-                    <div>
-                        <ul
+                    </div> */}
+                    <div className="grid grid-cols-3">
+                        {locations.map((location) => {
+                                return (
+                                    <div
+                                        key={location.id}
+                                        className="py-3 leading-6"
+                                    >
+                                        <p
+                                            className="text-lg text-marv font-medium flex content-center py-2"
+                                        >
+                                            {location.locationType === "Restaurant" ? 
+                                                <RestaurantIcon/>
+                                                :
+                                                <RetailIcon/>
+                                            }
+                                            <div
+                                                className="pl-5 text-marv font-medium"
+                                            >
+                                                {location.locationTitle}
+                                            </div>
+                                        </p>
+                                        <p
+                                        >{location.locationAddress}</p>
+                                            <a
+                                                href={"tel:" + location.phoneNumber}
+                                            >
+                                                Tel: {location.phoneNumber}
+                                        </a>
+                                        <br/>
+                                            <a
+                                            className="text-blueMetal"
+                                                href={location.locationWebsite}
+                                            >
+                                                {location.locationWebsite}
+                                            </a>
+                                    </div>
+                                )
+                            })}
+                        {/* <ul
                             className="px-5 py-2"
                         >
                             {locations.map((location) => {
@@ -66,30 +108,30 @@ const PurchaseLocations = (props) => {
                                         </p>
                                         <p
                                         >{location.locationAddress}</p>
-                                        <p
-                                        >
                                             <a
                                                 href={"tel:" + location.phoneNumber}
                                             >
                                                 Tel: {location.phoneNumber}
-                                            </a>
-                                        </p>
-                                        <p
-                                            className="text-blueMetal"
-                                        >
+                                        </a>
+                                        <br/>
                                             <a
+                                            className="text-blueMetal"
                                                 href={location.locationWebsite}
                                             >
                                                 {location.locationWebsite}
                                             </a>
-                                        </p>
                                     </li>
                                 )
                             })}
-                        </ul>
+                        </ul> */}
                     </div>
                 </section>
-                <section></section>
+                {/* <section> */}
+                    {/* <PurchaseMap
+                        locations={locations}
+                    /> */}
+                    {/* <MapWithNoSSR/> */}
+                {/* </section> */}
             </section>
         </React.Fragment>
     )

@@ -41,8 +41,30 @@ const WhereToBuy = (props) => {
                         locations={locations}
                     />
                 </section>
-                <section id="local">
-                    Ship with vino shipper
+                <section
+                    id="local"
+                >
+                    <h2
+                        className="text-center text-marv text-3xl py-2 leading-10"
+                    >
+                        Local wine pick-up and delivery available!
+                    </h2>
+                    <div
+                        className="text-center font-normal text-lg text-black leading-8"
+                    >
+                        If you would like to order wine for pick up here at the winery or have it delivered locally, click on the buy wine button choose pick-up or local delivery
+                    </div>
+                    <a
+                        className="flex justify-center py-2"
+                        href="https://vinoshipper.com/shop/montpelier_vineyards_llc"
+                        passHref
+                    >
+                        <button
+                            className="bg-marv text-beige py-1.5 2xl:py-2 px-4 rounded-full text-lg 2xl:text-2xl"
+                        >
+                            Shop now with VinoShipper
+                        </button>
+                    </a>
                 </section>
                 <section id="ship" className="pb-20">
                     <h2
