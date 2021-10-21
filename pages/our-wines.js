@@ -39,7 +39,7 @@ const OurWines = (props) => {
                     />
                 </div>
                 <section
-                    className="pt-16 grid grid-cols-2 gap-16 pb-20"
+                    className="pt-16 grid grid-cols-1 lg:grid-cols-2 gap-16 pb-20"
                 >
                     {wines?.map((wine) => {
                         return (
