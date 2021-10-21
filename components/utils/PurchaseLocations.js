@@ -5,7 +5,6 @@ import RestaurantIcon from './RestaurantIcon'
 import RetailIcon from './RetailIcon'
 import PurchaseMap from './PurchaseMap'
 import dynamic from 'next/dynamic'
-// import Head from 'next/head'
 
 
 const PurchaseLocations = (props) => {
@@ -34,7 +33,7 @@ const PurchaseLocations = (props) => {
     return (
         <React.Fragment>
             <section
-                // className="grid grid-cols-2"
+                className="grid grid-cols-2"
             >
                 <section>
                     <h4
@@ -45,12 +44,14 @@ const PurchaseLocations = (props) => {
                     >
                         Filter by
                     </div> */}
-                    <div className="grid grid-cols-3">
-                        {locations.map((location) => {
+                    <div
+                        // className="grid grid-cols-1 lg:grid-cols-3 gap-6 py-2"
+                    >
+                        {/* {locations.map((location) => {
                                 return (
                                     <div
                                         key={location.id}
-                                        className="py-3 leading-6"
+                                        className="leading-6"
                                     >
                                         <p
                                             className="text-lg text-marv font-medium flex content-center py-2"
@@ -82,8 +83,8 @@ const PurchaseLocations = (props) => {
                                             </a>
                                     </div>
                                 )
-                            })}
-                        {/* <ul
+                            })} */}
+                        <ul
                             className="px-5 py-2"
                         >
                             {locations.map((location) => {
@@ -123,15 +124,12 @@ const PurchaseLocations = (props) => {
                                     </li>
                                 )
                             })}
-                        </ul> */}
+                        </ul>
                     </div>
                 </section>
-                {/* <section> */}
-                    {/* <PurchaseMap
-                        locations={locations}
-                    /> */}
-                    {/* <MapWithNoSSR/> */}
-                {/* </section> */}
+                <section>
+                    
+                </section>
             </section>
         </React.Fragment>
     )

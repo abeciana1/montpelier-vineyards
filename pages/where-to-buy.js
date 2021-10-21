@@ -22,7 +22,7 @@ const WhereToBuy = (props) => {
                     </div>
                 </section>
                 <section
-                    className="text-marv text-xl grid md:grid-cols-3 justify-items-center"
+                    className="text-marv text-xl grid md:grid-cols-3 justify-items-center pb-5"
                 >
                     <a
                         href="/where-to-buy#retail"
@@ -36,6 +36,7 @@ const WhereToBuy = (props) => {
                 </section>
                 <section
                     id="retail"
+                    className="py-5"
                 >
                     <PurchaseLocations
                         locations={locations}
@@ -43,6 +44,7 @@ const WhereToBuy = (props) => {
                 </section>
                 <section
                     id="local"
+                    className="py-5"
                 >
                     <h2
                         className="text-center text-marv text-3xl py-2 leading-10"
@@ -66,7 +68,7 @@ const WhereToBuy = (props) => {
                         </button>
                     </a>
                 </section>
-                <section id="ship" className="pb-20">
+                <section id="ship" className="pt-5 pb-20">
                     <h2
                         className="text-center text-marv text-3xl py-2 leading-10"
                     >
@@ -123,19 +125,19 @@ export async function getStaticProps(context) {
     // query PurchaseLocations() {
     const query = gql`
         query {
-  purchaseLocations{
-    id
-    locationTitle
-    locationType
-    locationWebsite
-    phoneNumber
-    locationAddress
-    locationGeoCoords {
-      latitude
-      longitude
-    }
-  }
-}`
+        purchaseLocations{
+            id
+            locationTitle
+            locationType
+            locationWebsite
+            phoneNumber
+            locationAddress
+            locationGeoCoords {
+                latitude
+                longitude
+            }
+        }
+    }`
     
     // const data = await graphClient.request(query)
     const data = await client.request(query)
