@@ -1,13 +1,9 @@
 import React from 'react';
 
+import dynamic from 'next/dynamic';
 
-const PurchaseMap = () => {
-    
-    return (
-        <div>
-            
-        </div>
-    )
-}
+const Map = dynamic(() => import('./Map'), {
+  ssr: false
+});
 
-export default PurchaseMap
+export default Map;
