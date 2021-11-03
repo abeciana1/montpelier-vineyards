@@ -3,6 +3,7 @@ import Layout from '../components/utils/Layout'
 import DomShipping from '../components/utils/DomShipping'
 import PurchaseLocations from '../components/utils/PurchaseLocations'
 import { gql, GraphQLClient } from 'graphql-request'
+import Link from 'next/link'
 
 const WhereToBuy = (props) => {
 
@@ -24,15 +25,24 @@ const WhereToBuy = (props) => {
                 <section
                     className="text-marv text-xl grid md:grid-cols-3 justify-items-center pb-5"
                 >
-                    <a
+                    <Link
                         href="/where-to-buy#retail"
-                    >Restaurants & Retailers</a>
-                    <a
+                    >
+                        <a
+                        >Restaurants & Retailers</a>
+                    </Link>
+                    <Link
                         href="/where-to-buy#local"
-                    >Local Pickup</a>
-                    <a
+                    >
+                        <a
+                        >Local Pickup</a>
+                    </Link>
+                    <Link
                         href="/where-to-buy#ship"
-                    >Domestic Shipping</a>
+                    >
+                        <a
+                        >Domestic Shipping</a>
+                    </Link>
                 </section>
                 <section
                     id="retail"
@@ -56,17 +66,20 @@ const WhereToBuy = (props) => {
                     >
                         If you would like to order wine for pick up here at the winery or have it delivered locally, click on the buy wine button choose pick-up or local delivery
                     </div>
-                    <a
-                        className="flex justify-center py-2"
+                    <Link
                         href="https://vinoshipper.com/shop/montpelier_vineyards_llc"
-                        passHref
                     >
-                        <button
-                            className="bg-marv text-beige py-1.5 2xl:py-2 px-4 rounded-full text-lg 2xl:text-2xl"
+                        <a
+                            className="flex justify-center py-2"
+                            passHref
                         >
-                            Shop now with VinoShipper
-                        </button>
-                    </a>
+                            <button
+                                className="bg-marv text-beige py-1.5 2xl:py-2 px-4 rounded-full text-lg 2xl:text-2xl"
+                            >
+                                Shop now with VinoShipper
+                            </button>
+                        </a>
+                    </Link>
                 </section>
                 <section id="ship" className="pt-5 pb-20">
                     <h2

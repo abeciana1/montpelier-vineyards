@@ -148,7 +148,7 @@ const PurchaseLocations = (props) => {
                                 
                                 let position = [location.locationGeoCoords.latitude, location.locationGeoCoords.longitude]
                             return (
-                                <Marker position={position}>
+                                <Marker key={location.id} position={position}>
                                     <Popup>
                                     <div
                                         key={location.id}

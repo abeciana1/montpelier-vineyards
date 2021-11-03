@@ -97,6 +97,7 @@ const OurWines = (props) => {
                                     <img
                                         src={wine?.wineImage?.url}
                                         className="mx-auto h-96"
+                                        alt={wine?.wineName}
                                     />
                                 </div>
                             </>

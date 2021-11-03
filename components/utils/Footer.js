@@ -1,6 +1,7 @@
 import React from 'react';
 import Layout from './Layout'
 import Contact from '../forms/Contact'
+import Link from 'next/link'
 
 const Footer = () => {
 
@@ -13,10 +14,13 @@ const Footer = () => {
                     >
                         <div>
                         <div className="flex items-center">
+                            <Link
+                                href="http://www.facebook.com/MontpelierVineyards"
+                            >
                                 <a
-                                    href="http://www.facebook.com/MontpelierVineyards"
-                                    target="_blank"
                                     alt="Montpelier Vineyards — Facebook"
+                                    target="_blank"
+                                    rel="noreferrer noopener"
                                 >    
                                     <button>
                                         <img
@@ -26,8 +30,12 @@ const Footer = () => {
                                         />
                                     </button>
                                 </a>
+                            </Link>
+                            <Link
+                                href="https://www.instagram.com/montpelier.vineyards/"
+                            >
                                 <a
-                                    href="https://www.instagram.com/montpelier.vineyards/"
+                                    rel="noreferrer noopener"
                                     target="_blank"
                                     alt="Montpelier Vineyards — Instagram"
                                 >    
@@ -39,9 +47,13 @@ const Footer = () => {
                                         />
                                     </button>
                                 </a>
+                            </Link>
+                            <Link
+                                href="https://www.wunderground.com/personal-weather-station/dashboard?ID=KVTMONTP6"
+                            >
                                 <a
-                                    href="https://www.wunderground.com/personal-weather-station/dashboard?ID=KVTMONTP6"
                                     target="_blank"
+                                    rel="noreferrer noopener"
                                     alt="Montpelier Vineyards — Weather Underground"
                                 >
                                     <button>
@@ -52,6 +64,7 @@ const Footer = () => {
                                         />
                                     </button>
                                 </a>
+                            </Link>
                                 <div>
                                 </div>
                             </div>
@@ -75,27 +88,51 @@ const Footer = () => {
                         className="grid md:grid-cols-5 items-center justify-items-center md:pt-5"
                     >
                         <div></div>
-                        <a href="http://www.vermontgrapeandwinecouncil.com/" target="_blank">
-                            <img
-                            src="/vt-grape-wine-council.webp"
-                            className="w-32 pt-5 md:pt-0"
-                            alt="Vermont Grape Wine Council logo"
-                            />
-                        </a>
-                        <a href="http://www.vermontfresh.net/" target="_blank">
-                            <img
-                            src="https://media.graphcms.com/output=format:jpg/FU1jNGsSRyKj4981mMkY?_ga=2.212780436.1804149618.1633573467-722458239.1630371733"
-                            className="w-20 pt-5 md:pt-0"
-                            alt="Vermont Fresh Network logo"
-                            />
-                        </a>
-                        <a href="https://nofavt.org/" target="_blank">
-                            <img
-                            src="/vt-certified-organic.gif"
-                            className="w-20 pt-5 md:pt-0"
-                            alt="Vermont Certified Organic logo"
-                            />
-                        </a>
+                        <Link
+                            href="http://www.vermontgrapeandwinecouncil.com/"
+                        >
+                            <a 
+                                target="_blank"
+                                rel="noreferrer noopener"
+                                alt="Vermont Grape and Wine Council"
+                            >
+                                <img
+                                src="/vt-grape-wine-council.webp"
+                                className="w-32 pt-5 md:pt-0"
+                                alt="Vermont Grape Wine Council logo"
+                                />
+                            </a>
+                        </Link>
+                        <Link
+                            href="http://www.vermontfresh.net/" 
+                        >    
+                            <a 
+                                alt="Vermont Fresh"
+                                target="_blank"
+                                rel="noreferrer noopener"
+                            >
+                                <img
+                                src="https://media.graphcms.com/output=format:jpg/FU1jNGsSRyKj4981mMkY?_ga=2.212780436.1804149618.1633573467-722458239.1630371733"
+                                className="w-20 pt-5 md:pt-0"
+                                alt="Vermont Fresh Network logo"
+                                />
+                            </a>
+                        </Link>
+                        <Link
+                            href="https://nofavt.org/"
+                        >
+                            <a 
+                                target="_blank"
+                                alt="Vermont Certified Organic"
+                                rel="noreferrer noopener"
+                            >
+                                <img
+                                src="/vt-certified-organic.gif"
+                                className="w-20 pt-5 md:pt-0"
+                                alt="Vermont Certified Organic logo"
+                                />
+                            </a>
+                        </Link>
                         <div></div>
                     </section>
                     <div
