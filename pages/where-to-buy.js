@@ -1,6 +1,6 @@
 import React from 'react';
 import Layout from '../components/utils/Layout'
-import DomShipping from '../components/utils/DomShipping'
+// import DomShipping from '../components/utils/DomShipping'
 import PurchaseLocations from '../components/utils/PurchaseLocations'
 import { gql, GraphQLClient } from 'graphql-request'
 import Link from 'next/link'
@@ -95,7 +95,11 @@ const WhereToBuy = (props) => {
                     <div
                         className="flex lg:justify-center lg:py-10"
                     >
-                        <DomShipping/>
+                        <img
+                            src="/domestic-shipping.png"
+                            alt="Montpelier Vineyards domestic shipping"
+                            className="md:w-3/5 mx-auto"
+                        />
                     </div>
                     <section>
                         <h3

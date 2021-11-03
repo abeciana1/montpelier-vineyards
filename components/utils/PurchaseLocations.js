@@ -124,7 +124,7 @@ const PurchaseLocations = (props) => {
                                         </a>
                                         <br/>
                                             <a
-                                            className="text-blueMetal"
+                                            className="text-blueMetal break-words"
                                                 href={location.locationWebsite}
                                             >
                                                 {location.locationWebsite}
