@@ -12,10 +12,10 @@ function MyApp({ Component, pageProps }) {
     <>
       <Head>
         <title>Montpelier Vineyards</title>
-            <link
-            href="https://api.mapbox.com/mapbox-gl-js/v1.10.1/mapbox-gl.css"
-            rel="stylesheet"
-          />
+        <link
+          href="https://api.mapbox.com/mapbox-gl-js/v1.10.1/mapbox-gl.css"
+          rel="stylesheet"
+        />
       </Head>
       <NavBar/>
     {/* <section
