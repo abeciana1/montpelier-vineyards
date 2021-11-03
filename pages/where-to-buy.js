@@ -134,7 +134,7 @@ const WhereToBuy = (props) => {
     )
 }
 
-export async function getStaticProps(context) {
+export async function getServerSideProps(context) {
 
     // const client = new GraphQLClient('https://api-us-east-1.graphcms.com/v2/cku68bqqj27iv01xn6g6se7dc/master')
     const client = new GraphQLClient(process.env.GRAPH_CMS_API_ENDPOINT)

@@ -8,19 +8,6 @@ const OurWines = (props) => {
         wines
     } = props;
 
-//     {
-//     "alcohol": "12%",
-//     "beverageType": [
-//         "Red"
-//     ],
-//     "grapeVariety": "100% Petite Pearl",
-//     "id": "ckuytdt14biym0b843ofyn52a",
-//     "vintage": "2019",
-//     "wineName": "Petite Pearl Single Varietal Red Wine",
-//     "winemakingNotes": "2019 was a difficult year to grow red wine grapes in Vermont. A cool and wet Spring and Fall resulted in the latest harvest ever on October 19, 2019. Primary fermentation took place in French oak barrels for two weeks, then into new Hungarian oak barrels, and finally, the wine finished MLF and aged in glass demijohns before bottling.",
-//     "tastingNotes": "This full-bodied wine boasts a deep, dark ruby color with an intense burst of wild blackberries and cherry, with notes of leather, wild mushroom, vanilla, and mocha. It has soft tannins and enough acidity to cut through the ripe/dried fruit and rich savory elements."
-// }
-
     return (
         <React.Fragment>
             <Layout>
@@ -69,7 +56,7 @@ const OurWines = (props) => {
                                         <div className="pt-1 text-marv font-bold leading-8">
                                             Variety:
                                             <span className="ml-1 text-black font-normal">
-                                                {wine.grapeVariety}
+                                                {wine?.grapeVariety}
                                             </span>
                                         </div>
                                         <div
@@ -79,7 +66,7 @@ const OurWines = (props) => {
                                             <span
                                                 className="ml-1 text-black font-normal"
                                             >
-                                                {wine.winemakingNotes}
+                                                {wine?.winemakingNotes}
                                             </span>
                                     </div>
                                         <div
@@ -89,17 +76,17 @@ const OurWines = (props) => {
                                             <span
                                                 className="ml-1 text-black font-normal"
                                             >
-                                                {wine.tastingNotes}
+                                                {wine?.tastingNotes}
                                             </span>
                                         </div>
                                 </div>
-                                <div className="self-center">
+                                {/* <div className="self-center">
                                     <img
                                         src={wine?.wineImage?.url}
                                         className="mx-auto h-96"
                                         alt={wine?.wineName}
                                     />
-                                </div>
+                                </div> */}
                             </>
                         )
                     })}
@@ -109,7 +96,8 @@ const OurWines = (props) => {
     )
 }
 
-export async function getStaticProps(context) {
+// export async function getStaticProps(context) {
+export async function getServerSideProps(context) {
 
     const client = new GraphQLClient(process.env.GRAPH_CMS_API_ENDPOINT)
 
