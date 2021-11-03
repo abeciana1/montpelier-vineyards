@@ -96,7 +96,8 @@ const OurWines = (props) => {
     )
 }
 
-export async function getStaticProps() {
+// export async function getStaticProps(context) {
+export async function getServerSideProps(context) {
 
     const client = new GraphQLClient(process.env.GRAPH_CMS_API_ENDPOINT)
 
