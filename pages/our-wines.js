@@ -93,13 +93,13 @@ const OurWines = (props) => {
                                             </span>
                                         </div>
                                 </div>
-                                <div className="self-center">
+                                {/* <div className="self-center">
                                     <img
                                         src={wine?.wineImage?.url}
                                         className="mx-auto h-96"
                                         alt={wine?.wineName}
                                     />
-                                </div>
+                                </div> */}
                             </>
                         )
                     })}
