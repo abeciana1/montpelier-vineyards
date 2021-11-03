@@ -4,6 +4,9 @@ module.exports = {
   purge: ['./pages/**/*.js', './components/**/*.js'],
   darkMode: false, // or 'media' or 'class'
   theme: {
+    height: {
+      xl: '100rem'
+    },
     screens: {
       'sm': '640px',
       'md': '768px',

@@ -1,8 +1,15 @@
 import React from 'react';
 import Layout from '../components/utils/Layout'
 import DomShipping from '../components/utils/DomShipping'
+import PurchaseLocations from '../components/utils/PurchaseLocations'
+import { gql, GraphQLClient } from 'graphql-request'
+import Link from 'next/link'
 
-const WhereToBuy = () => {
+const WhereToBuy = (props) => {
+
+    const {
+        locations
+    } = props
 
     return (
         <React.Fragment>
@@ -16,23 +23,65 @@ const WhereToBuy = () => {
                     </div>
                 </section>
                 <section
-                    className="text-marv text-xl grid md:grid-cols-3 justify-items-center"
+                    className="text-marv text-xl grid md:grid-cols-3 justify-items-center pb-5"
                 >
-                    <a
+                    <Link
                         href="/where-to-buy#retail"
-                    >Restaurants & Retailers</a>
-                    <a
+                    >
+                        <a
+                        >Restaurants & Retailers</a>
+                    </Link>
+                    <Link
                         href="/where-to-buy#local"
-                    >Local Pickup</a>
-                    <a
+                    >
+                        <a
+                        >Local Pickup</a>
+                    </Link>
+                    <Link
                         href="/where-to-buy#ship"
-                    >Domestic Shipping</a>
+                    >
+                        <a
+                        >Domestic Shipping</a>
+                    </Link>
                 </section>
-                <section></section>
-                <section id="local">
-                    Ship with vino shipper
+                <section
+                    id="retail"
+                    className="py-5"
+                >
+                    <PurchaseLocations
+                        locations={locations}
+                    />
                 </section>
-                <section id="ship" className="pb-20">
+                <section
+                    id="local"
+                    className="py-5"
+                >
+                    <h2
+                        className="text-center text-marv text-3xl py-2 leading-10"
+                    >
+                        Local wine pick-up and delivery available!
+                    </h2>
+                    <div
+                        className="text-center font-normal text-lg text-black leading-8"
+                    >
+                        If you would like to order wine for pick up here at the winery or have it delivered locally, click on the buy wine button choose pick-up or local delivery
+                    </div>
+                    <Link
+                        href="https://vinoshipper.com/shop/montpelier_vineyards_llc"
+                    >
+                        <a
+                            className="flex justify-center py-2"
+                            passHref
+                        >
+                            <button
+                                className="bg-marv text-beige py-1.5 2xl:py-2 px-4 rounded-full text-lg 2xl:text-2xl"
+                            >
+                                Shop now with VinoShipper
+                            </button>
+                        </a>
+                    </Link>
+                </section>
+                <section id="ship" className="pt-5 pb-20">
                     <h2
                         className="text-center text-marv text-3xl py-2 leading-10"
                     >
@@ -79,6 +128,41 @@ const WhereToBuy = () => {
             </Layout>
         </React.Fragment>
     )
+}
+
+export async function getStaticProps(context) {
+
+    // const client = new GraphQLClient('https://api-us-east-1.graphcms.com/v2/cku68bqqj27iv01xn6g6se7dc/master')
+    const client = new GraphQLClient(process.env.GRAPH_CMS_API_ENDPOINT)
+
+    // query PurchaseLocations() {
+    const query = gql`
+        query {
+        purchaseLocations{
+            id
+            locationTitle
+            locationType
+            locationWebsite
+            phoneNumber
+            locationAddress
+            locationGeoCoords {
+                latitude
+                longitude
+            }
+        }
+    }`
+    
+    // const data = await graphClient.request(query)
+    const data = await client.request(query)
+
+    const locations = data.purchaseLocations
+    
+    return {
+        props: {
+            locations
+        }
+    }
+    
 }
 
 export default WhereToBuy
