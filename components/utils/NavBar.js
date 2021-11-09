@@ -40,6 +40,13 @@ const NavBar = (props) => {
                                 <a>Home</a>
                             </Link>
                             <Link
+                                href="/about"
+                            >
+                                <a
+                                    className="pl-5 lg:pl-10"
+                                >About</a>
+                            </Link>
+                            <Link
                                 href="/our-wines"
                             >
                                 <a
@@ -53,20 +60,13 @@ const NavBar = (props) => {
                                     className="pl-5 lg:pl-10"
                                 >Where to Buy</a>
                             </Link>
-                            <Link
-                                href="/about"
-                            >
-                                <a
-                                    className="pl-5 lg:pl-10"
-                                >About</a>
-                            </Link>
-                            <Link
+                            {/* <Link
                                 href="/shop-now"
                             >
                                 <a
                                     className="pl-5 lg:pl-10"
                                 >Shop Now</a>
-                            </Link>
+                            </Link> */}
                     </span>
                     <span
                         className="self-center absolute right-5 z-50"
@@ -114,6 +114,13 @@ const NavBar = (props) => {
                                                     </li>
                                                     <li className="pt-3">
                                                         <Link
+                                                            href="/about"
+                                                        >
+                                                            <a>About</a>
+                                                        </Link>
+                                                    </li>
+                                                    <li className="pt-3">
+                                                        <Link
                                                             href="/our-wines"
                                                         >
                                                             <a>Our Wines</a>
@@ -126,20 +133,13 @@ const NavBar = (props) => {
                                                             <a>Where to Buy</a>
                                                         </Link>
                                                     </li>
-                                                    <li className="pt-3">
-                                                        <Link
-                                                            href="/about"
-                                                        >
-                                                            <a>About</a>
-                                                        </Link>
-                                                    </li>
-                                                    <li className="pt-3">
+                                                    {/* <li className="pt-3">
                                                         <Link
                                                             href="/shop-now"
                                                         >
                                                             <a>Shop Now</a>
                                                         </Link>
-                                                    </li>
+                                                    </li> */}
                                                 </ul>
                                             </div>
                                         </div>
